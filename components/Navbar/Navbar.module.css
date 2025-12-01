@@ -1,0 +1,56 @@
+/* components/navbar.module.css */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.themeToggle {
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--button-bg-soft);
+  color: var(--text-color);
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.icons a {
+  color: var(--muted-text);
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 999px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.icons a:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.hireMe {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #f97373;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding-inline: 16px;
+  }
+}

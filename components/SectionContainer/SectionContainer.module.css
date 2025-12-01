@@ -1,0 +1,12 @@
+
+.sections {
+  height: calc(100vh - 64px); /* approx topbar height */
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+@media (max-width: 900px) {
+  .sections {
+    height: calc(100vh - 56px);
+  }
+}

@@ -1,0 +1,49 @@
+/* app/page.module.css */
+
+.appRoot {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* theme vars */
+.dark {
+  --bg-color: #161822;
+  --bg-elevated: #020617;
+  --card-bg: #020617;
+  --card-inner-bg: #121521;
+  --sidebar-bg: #121521;
+  --text-color: #e5e7eb;
+  --muted-text: #9ca3af;
+  --accent: #6366f1;
+  --accent-soft: rgba(99, 102, 241, 0.15);
+  --border-color: rgba(148, 163, 184, 0.3);
+  --button-bg: #4f46e5;
+  --button-bg-soft: #020617;
+  --button-text: #e5e7eb;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.light {
+  --bg-color: #d7d7d7;
+  --bg-elevated: #d6d6d6;
+  --card-bg: #e5e7eb;
+  --card-inner-bg: #f3f4f6;
+  --sidebar-bg: #c7c7c7;
+  --text-color: #111827;
+  --muted-text: #4b5563;
+  --accent: #4f46e5;
+  --accent-soft: rgba(79, 70, 229, 0.12);
+  --border-color: rgba(148, 163, 184, 0.6);
+  --button-bg: #4f46e5;
+  --button-bg-soft: #e5e7eb;
+  --button-text: #f9fafb;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
