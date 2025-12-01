@@ -8,15 +8,16 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Navbar from "../components/Navbar/Navbar";
 import SectionContainer from "../components/SectionContainer/SectionContainer";
 import About from "../components/About/About";
+import {AccountCircle, Memory, Book, Message } from "@mui/icons-material";
 // import ProjectsSection from "../components/ProjectsSection";
 // import BlogSection from "../components/BlogSection";
 // import ContactSection from "../components/ContactSection";
 
 const SECTIONS = [
-  { id: "about", label: "About" },
-  { id: "projects", label: "Projects" },
-  { id: "blog", label: "Blog" },
-  { id: "contact", label: "Contact" },
+  { id: "about", label: "ABOUT", icon: AccountCircle },
+  { id: "projects", label: "PROJECTS", icon: Memory },
+  { id: "blog", label: "BLOG", icon: Book },
+  { id: "contact", label: "CONTACT", icon: Message },
 ];
 
 // Change this to your actual resume URL

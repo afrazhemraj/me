@@ -1,5 +1,3 @@
-/* components/Sidebar.module.css */
-
 .sidebar {
   position: fixed;               /* float over the layout */
   top: 50%;                      /* middle of the screen */
@@ -15,38 +13,56 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  z-index: 20;                   /* above content */
+  z-index: 20;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
+  gap: 20px;
 }
 
+/* Button / link box */
 .link {
-  border: none;
+  width: 100%;
   background: transparent;
-  color: var(--muted-text);
-  font-size: 12px;
-  padding: 8px 12px;
-  border-radius: 999px;
+  border: none;
   cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  padding: 10px 0;
+  color: var(--muted-text);
+  transition: color 0.2s, transform 0.2s;
   text-decoration: none;
-  text-align: left;
-  transition: background 0.15s, color 0.15s, transform 0.1s;
 }
 
-.link:hover {
-  background: var(--accent-soft);
+.icon {
+  font-size: 22px;
+  color: var(--muted-text);
+  transition: color 0.2s;
+}
+
+.label {
+  font-size: 11px;
+  color: var(--muted-text);
+  transition: color 0.2s;
+}
+
+/* Hover */
+.link:hover .icon,
+.link:hover .label {
   color: var(--accent);
-  transform: translateX(2px);
 }
 
-.link:active {
-  transform: translateX(0);
+/* Active */
+.active .icon,
+.active .label {
+  color: var(--accent) !important;
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {
