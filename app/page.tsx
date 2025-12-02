@@ -9,7 +9,7 @@ import Navbar from "../components/Navbar/Navbar";
 import SectionContainer from "../components/SectionContainer/SectionContainer";
 import About from "../components/About/About";
 import {AccountCircle, Memory, Book, Message } from "@mui/icons-material";
-// import ProjectsSection from "../components/ProjectsSection";
+import Projects from "../components/Projects/Projects";
 // import BlogSection from "../components/BlogSection";
 // import ContactSection from "../components/ContactSection";
 
@@ -52,6 +52,8 @@ export default function HomePage() {
 
         <SectionContainer>
           <About resumeUrl={RESUME_URL} />
+          <Projects resumeUrl={RESUME_URL} />
+
           {/* <ProjectsSection />
           <BlogSection />
           <ContactSection /> */}

@@ -1,13 +1,13 @@
-// components/About.tsx
-import styles from "./About.module.css";
+// components/Project.tsx
+import styles from "./Projects.module.css";
 
-interface AboutProps {
+interface ProjectsProps {
   resumeUrl: string;
 }
 
-export default function About({ resumeUrl }: AboutProps) {
+export default function Projects({ resumeUrl }: ProjectsProps) {
   return (
-    <section id="about" className={styles.section}>
+    <section id="projects" className={styles.section}>
       <div className={styles.card}>
         <div className={styles.avatar} />
         <h1 className={styles.name}>Afraz Hemraj</h1>
