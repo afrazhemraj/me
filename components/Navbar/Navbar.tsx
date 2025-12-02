@@ -10,11 +10,19 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
   return (
     <header className={styles.navbar}>
       <button
-        className={styles.themeToggle}
+        className={`${styles.themeToggle} ${
+          theme === "dark" ? styles.dark : styles.light
+        }`}
         onClick={onToggleTheme}
         aria-label="Toggle theme"
       >
-        {theme === "dark" ? "☾" : "☀"}
+        <span className={styles.themeIcon}>
+          <DarkModeOutlined fontSize="small" />
+        </span>
+        <span className={styles.themeIcon}>
+          <LightModeOutlined fontSize="small" />
+        </span>
+        <span className={styles.thumb} />
       </button>
 
       <div className={styles.icons}>
